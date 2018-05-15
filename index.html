@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Selection Test</title>
+</head>
+<body>
+    <div class="form">
+        <div class="title">Form</div>
+        <form action="" method="GET" name="mainForm" >
+            <div class="form-inner">
+                <div class="form-group">
+                    <input type="text" placeholder="First name" name="firstName" required >
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Last name" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Birthday" name="birthday" required>
+                </div>
+                <div class="form-group">
+                    <div class="sex-radio">
+                        <div class="sex-radio__title">Sex</div>  
+                        
+                            <input type="radio" name="sex" value="male" required> 
+                            <label for="male">Male</label>
+                            <input type="radio" name="sex" value="female">
+                            <label for="female">Female</label>
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select name="country" id="select" required>
+                        <option value="" disabled selected>Select country</option>
+                        <option value="1">Ukraine</option>
+                        <option value="2">UK</option>
+                        <option value="3">USA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="notes" id="notes" rows="3" placeholder="Notes"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
